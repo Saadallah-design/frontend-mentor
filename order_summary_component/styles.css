@@ -23,6 +23,7 @@
     background-position: center;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -139,4 +140,11 @@
 .cancel:hover {
     background-color: var(--neutral-pale-blue);
     color: var(--neutral-desatrd-blue);
+}
+
+/* attribution */
+.attribution {
+    padding: 40px;
+    justify-content: center;
+    align-self: center;
 }
