@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+:root {
+    --primary-clr:  hsl(225, 100%, 94%);
+    --primary-blue: hsl(245, 75%, 52%);
+    --neutral-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desatrd-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+    --hover-btn: #707dff;
+    /* fonts */
+    --heading: 24px;
+    --body-p: 16px;
+}
+/* General css for the section */
+.order-section{
+    background-image: url(./assets/images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Order summary card container */
+.order-summary-card {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures inner elements like images follow the rounding */
+}
+
+/* Image inside order summary card */
+.order-summary-card img {
+    max-height: 200px;
+    min-width: 100%;
+}
+
+/* Order content styles */
+.order-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 1.2rem;  
+}
+
+/* Order text styling */
+.order-content .order-txt{
+    font-size: var(--body-p);
+    color: var(--neutral-desatrd-blue);
+    text-align: center;
+}
+
+/* Plan container that holds icon, plan details, and change link */
+.plan-cont {
+    display: flex;
+    padding: 10px 20px;
+    gap: 1rem;
+    background-color: var(--neutral-pale-blue);
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Styling for icon within the plan container */
+.plan-cont i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-clr);
+    border-radius: 50%;
+}
+.plan-cont h3{
+    font-size: var(--body-p);
+}
+.plan #price{
+    color: var(--neutral-desatrd-blue);
+}
+
+/* "Change" link styling */
+.change {
+    margin-left: auto;
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+.change:hover {
+    color: var(--hover-btn);
+    cursor: pointer;
+}
+
+/* Order footer container */
+.order-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Styling for both buttons in the footer */
+.order-footer button{
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--body-p);
+    font-weight: 600;
+}
+.proceed {
+    background-color: var(--primary-blue);
+    color: var(--primary-clr);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.proceed:hover {
+    background-color: var(--hover-btn);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+
+}
+.cancel {
+    background-color: transparent;
+    color: var(--neutral-desatrd-blue);
+    cursor: pointer;
+}
+.cancel:hover {
+    background-color: var(--neutral-pale-blue);
+    color: var(--neutral-desatrd-blue);
+}
